@@ -1,3 +1,111 @@
+var paginator = 0;
+
+function right() {
+  if (paginator < 1) {
+    setTimeout(() => {
+      document.getElementById("heading").style.opacity = "0";
+    }, "100");
+    setTimeout(() => {
+      document.getElementById("dritte").style.opacity = "0";
+      document.getElementById("dritte").style.height = "0px";
+    }, "500");
+    setTimeout(() => {
+      document.getElementById("cvajte").style.opacity = "0";
+      document.getElementById("cvajte").style.height = "0px";
+    }, "1000");
+    setTimeout(() => {
+      document.getElementById("erste").style.opacity = "0";
+      document.getElementById("erste").style.height = "0px";
+    }, "1500");
+    setTimeout(() => {
+      document.getElementById("heading").style.display = "none";
+      document.getElementById("erste").style.display = "none";
+      document.getElementById("cvajte").style.display = "none";
+      document.getElementById("dritte").style.display = "none";
+      document.getElementById("dot1").style.background = "#aaa";
+    }, "2000");
+    setTimeout(() => {
+      document.getElementById("heading2").style.display = "block";
+      document.getElementById("erste2").style.display = "inline-block";
+      document.getElementById("cvajte2").style.display = "inline-block";
+      document.getElementById("dritte2").style.display = "inline-block";
+      document.getElementById("dot2").style.background = "#222";
+    }, "2050");
+    setTimeout(() => {
+      document.getElementById("heading2").style.opacity = "1";
+    }, "2500");
+    setTimeout(() => {
+      document.getElementById("erste2").style.opacity = "1";
+      document.getElementById("erste2").style.height = "82%";
+    }, "3000");
+    setTimeout(() => {
+      document.getElementById("cvajte2").style.opacity = "1";
+      document.getElementById("cvajte2").style.height = "82%";
+    }, "3500");
+    setTimeout(() => {
+      document.getElementById("dritte2").style.opacity = "1";
+      document.getElementById("dritte2").style.height = "82%";
+    }, "4000");
+    paginator++;
+  } else {
+    left();
+  }
+}
+
+function left() {
+  if (paginator > 0) {
+    setTimeout(() => {
+      document.getElementById("heading2").style.opacity = "0";
+    }, "100");
+    setTimeout(() => {
+      document.getElementById("dritte2").style.opacity = "0";
+      document.getElementById("dritte2").style.height = "0px";
+    }, "500");
+    setTimeout(() => {
+      document.getElementById("cvajte2").style.opacity = "0";
+      document.getElementById("cvajte2").style.height = "0px";
+    }, "1000");
+    setTimeout(() => {
+      document.getElementById("erste2").style.opacity = "0";
+      document.getElementById("erste2").style.height = "0px";
+    }, "1500");
+    setTimeout(() => {
+      document.getElementById("heading2").style.display = "none";
+      document.getElementById("erste2").style.display = "none";
+      document.getElementById("cvajte2").style.display = "none";
+      document.getElementById("dritte2").style.display = "none";
+      document.getElementById("dot2").style.background = "#aaa";
+    }, "2000");
+    setTimeout(() => {
+      document.getElementById("heading").style.display = "block";
+      document.getElementById("erste").style.display = "inline-block";
+      document.getElementById("cvajte").style.display = "inline-block";
+      document.getElementById("dritte").style.display = "inline-block";
+      document.getElementById("dot1").style.background = "#222";
+    }, "2050");
+    setTimeout(() => {
+      document.getElementById("heading").style.opacity = "1";
+    }, "2500");
+    setTimeout(() => {
+      document.getElementById("erste").style.opacity = "1";
+      document.getElementById("erste").style.height = "82%";
+    }, "3000");
+    setTimeout(() => {
+      document.getElementById("cvajte").style.opacity = "1";
+      document.getElementById("cvajte").style.height = "82%";
+    }, "3500");
+    setTimeout(() => {
+      document.getElementById("dritte").style.opacity = "1";
+      document.getElementById("dritte").style.height = "82%";
+    }, "4000");
+    paginator--;
+  } else {
+    right();
+  }
+}
+
+
+
 function loader() {
   setTimeout(() => {
     document.getElementById("loader1").style.left = "49%";

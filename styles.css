@@ -152,13 +152,12 @@ a {
   border-radius: 50%;
   transition: 1.5s;
   width: 18px;
-  cursor: pointer;
 }
 #dot2, #dot3, #dot4 {
   background: #aaa;
   transition: 1.5s;
 }
-#heading {
+#heading, #heading2 {
   opacity: 0;
   transition: 1.5s;
 }
@@ -168,7 +167,7 @@ a {
   border-radius: 8px;
   margin: .5%;
 }
-#erste, #cvajte, #dritte {
+#erste, #cvajte, #dritte, #erste2, #cvajte2, #dritte2 {
   background: white;
   height: 0%;
   opacity: 0;
@@ -184,28 +183,31 @@ a {
   transform: rotate(90deg);
   font-size: 50px;
 }
-#erste {
-  background-image: url("pw.png");
+#erste, #erste2 {
+  background-image: url("img/pw.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-#cvajte{
-  background-image: url("library.png");
+#cvajte, #cvajte2 {
+  background-image: url("img/library.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-#dritte {
-  background-image: url("port.png");
+#dritte, #dritte2 {
+  background-image: url("img/port.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-#erste:hover, #cvajte:hover, #dritte:hover {
+#erste:hover, #cvajte:hover, #dritte:hover, #erste2:hover, #cvajte2:hover, #dritte2:hover {
   background-position: unset;
   transition: .5s;
   cursor: pointer;
+} 
+#header2, #erste2, #cvajte2, #dritte2 {
+  display: none;
 }
 #lefter {
   position: fixed;
