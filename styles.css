@@ -184,19 +184,19 @@ a {
   font-size: 50px;
 }
 #erste, #erste2 {
-  background-image: url("img/pw.png");
+  background-image: url("pw.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 #cvajte, #cvajte2 {
-  background-image: url("img/library.png");
+  background-image: url("library.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 #dritte, #dritte2 {
-  background-image: url("img/port.png");
+  background-image: url("port.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
